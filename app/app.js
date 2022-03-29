@@ -5,6 +5,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/index.html');
     require('./assets/templates/layouts/employer.html');
+    require('./assets/templates/layouts/partners.html');
 }
 
 // Depends
@@ -1274,4 +1275,25 @@ $(function () {
     $(document).on('click', '.workers-mobile-menu__wrapper', function (e) {
         e.stopPropagation();
     });
+
+    // show more text
+
+    setTimeout(function () {
+        $('.txt-hidden').each(function () {
+            var txt_height = $(this).height();
+            $('.txt-more__btn').click(function () {
+                var btn_txt = $(this);
+                btn_txt.html() == 'Показать все' ? btn_txt.html('Скрыть') : btn_txt.html('Показать все');
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $(this).closest('.txt-main__wrapper').find('.txt-main').css({ 'height': txt_height, 'max-height': 'unset', 'overflow': 'unset' });
+                }
+                else {
+                    $(this).closest('.txt-main__wrapper').find('.txt-main').removeAttr('style');
+                }
+            });
+        });
+    }, 1000);
+
+
 });

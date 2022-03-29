@@ -91,7 +91,7 @@
   align-items: center;
   height: inherit;
   width: calc(50% + 200px);
-  @include bp(xs) {
+  @include bp(sm) {
     width: auto;
   }
 }
@@ -122,22 +122,11 @@
     justify-content: space-between;
     align-items: center;
     flex: 1 0 auto;
-    height: inherit;
+    height: 100%;
     transform: skewX(-28deg);
-    @media (max-width: 1290px) {
-      background-color: #fff;
-    }
-
     & li {
       flex: 1 0 auto;
-      flex-grow: 1;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      background-color: #fff;
-      cursor: pointer;
+      height: 100%;
       &:hover {
         a {
           color: $red-accent;
@@ -152,7 +141,10 @@
         }
       }
       & a {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -172,7 +164,7 @@
   align-items: center;
   height: inherit;
   width: calc(50% - 200px);
-  @include bp(xs) {
+  @include bp(sm) {
     width: auto;
   }
 }
