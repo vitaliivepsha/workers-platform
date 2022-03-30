@@ -6,6 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/index.html');
     require('./assets/templates/layouts/employer.html');
     require('./assets/templates/layouts/partners.html');
+    require('./assets/templates/layouts/contacts.html');
 }
 
 // Depends
