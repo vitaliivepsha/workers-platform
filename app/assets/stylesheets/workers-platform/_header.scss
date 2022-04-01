@@ -61,6 +61,7 @@
         & a {
           position: relative;
           z-index: 1;
+          pointer-events: none;
           &::before {
             content: "";
             position: absolute;
@@ -347,11 +348,14 @@
   }
 }
 
-.workers-header__top {
-}
-
 .workers-header.vacancy {
-  overflow: hidden;
+  height: 120px;
+  @include bp(md) {
+    height: 70px;
+  }
+  @include bp(xs) {
+    height: 46px;
+  }
   & .workers-header__top {
     & li.current a::before {
       background: $red;
@@ -363,7 +367,7 @@
       content: "";
       position: absolute;
       left: 0;
-      z-index: -2;
+      // z-index: -2;
       width: calc(100% + 100vw);
       display: block;
       height: 100%;
@@ -372,6 +376,9 @@
       @media (max-width: 767px) {
         display: none;
       }
+    }
+    & .workers-header__login {
+     position: relative; 
     }
   }
 }
