@@ -32,18 +32,232 @@
       <div class="container">
         <h1 class="vacancies-main-title">Вакансии</h1>
         <div class="vacancies-main-search">
-          <form>
-            <select class="what-job SumoSelect">
-              <option>123123</option>
-              <option>123123</option>
-              <option>123123</option>
-              <option>123123</option>
-            </select>
+          <form class="ajax_form clear-styles">
+            <div class="vacancies-main-search-inner">
+              <div class="input-wrapper">
+                <span>Какую ищите работу</span>
+                <select class="vacancies-main-search-select what-job">
+                  <option selected>Любую</option>
+                  <option value="">Работа 1</option>
+                  <option value="">Работа 2</option>
+                  <option value="">Работа 3</option>
+                  <option value="">Работа 4</option>
+                  <option value="">Работа 5</option>
+                  <option value="">Работа 6</option>
+                  <option value="">Работа 7</option>
+                  <option value="">Работа 8</option>
+                  <option value="">Работа 9</option>
+
+                </select>
+              </div>
+              <div class="input-wrapper">
+                <span>Где ищите работу</span>
+                <select class="vacancies-main-search-select where-job">
+                  <option selected>Не важно</option>
+                  <option value="">Место 1</option>
+                  <option value="">Место 2</option>
+                  <option value="">Место 3</option>
+                  <option value="">Место 4</option>
+                  <option value="">Место 5</option>
+                  <option value="">Место 6</option>
+                  <option value="">Место 7</option>
+                  <option value="">Место 8</option>
+                  <option value="">Место 9</option>
+                </select>
+              </div>
+              <button type="submit">Найти</button>
+
+            </div>
           </form>
         </div>
       </div>
     </div>
-
+    <div class="vacancies-scope">
+      <div class="container">
+        <span class="vacancies-scope-title">Выберите свою сферу работы</span>
+        <ul class="vacancies-scope-list row">
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-01.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-01.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-01.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Логистика</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-02.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-02.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-02.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Сельское хозяйство</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-03.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-03.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-03.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Производство</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-04.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-04.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-04.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Ивенты</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-05.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-05.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-05.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Гостинично-ресторанная</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-06.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-06.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-06.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Почта</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-07.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-07.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-07.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Клининг</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-08.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-08.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-08.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Строительство</span>
+            </a>
+          </li>
+          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <a href="javascript:void(0)" class="vacancies-scope-item">
+              <div class="vacancies-scope-item__pic">
+                <picture>
+                  <source srcset="../../images/pixel.webp"
+                    data-original="../../images/workers-platform/vacancies-09.webp" class="lazy-web" type="image/webp">
+                  <source srcset="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-09.png"
+                    class="lazy-web" type="image/png">
+                  <img src="../../images/pixel.png" data-original="../../images/workers-platform/vacancies-09.png"
+                    class="lazy" alt="">
+                </picture>
+              </div>
+              <span class="vacancies-scope-item__title">Розничная торговля</span>
+            </a>
+          </li>
+        </ul>
+        <a href="javascript:void(0)" class="vacancies-scope-link">Смотреть все вакансии</a>
+      </div>
+    </div>
+    <div class="vacancies-work">
+      <div class="container">
+        <div class="vacancies-work-inner">
+          <div>
+            <span class="vacancies-work-title">Работа в городах</span>
+            <ul class="vacancies-work-list">
+              <li>Berlin</li>
+              <li>Dortmund</li>
+              <li>Dresden</li>
+              <li>Dresden</li>
+              <li>Berlin</li>
+            </ul>
+          </div>
+          <div>
+            <span class="vacancies-work-title">Работа в федеральных землях</span>
+            <ul class="vacancies-work-list">
+              <li>Baden-Württemberg</li>
+              <li>Sachsen-Anhalt</li>
+              <li>Schleswig-Holstein</li>
+              <li>Thüringen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vacancies-consalt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="vacancies-consalt-item">
+              <span>Мне нужна консультация менеджера</span>
+              <a href="javascript:void(0)">Оставить заявку</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <div class="vacancies-consalt-item">
+              <span>Вы также хотите подать заявку и в короткие сроки получить персонал? Пишите нам!</span>
+              <a href="javascript:void(0)">Подобрать персонал</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   ${require('../parts/workers-platform-footer-menu.html')}

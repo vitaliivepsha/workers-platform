@@ -82,6 +82,7 @@
         align-items: center;
         height: 100%;
         padding: 0 15px;
+        font-family: $title;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -155,6 +156,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        font-family: $title;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -242,6 +244,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: $title;
     width: 75px;
     height: 40px;
     border: 1px solid #fff;

@@ -1299,3 +1299,7 @@ $(function () {
 
 
 });
+
+$('.what-job, .where-job').SumoSelect({
+    forceCustomRendering: true
+});

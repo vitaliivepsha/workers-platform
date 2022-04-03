@@ -1,5 +1,5 @@
 .workers-footer{
-  padding: 53px 0;
+  padding: 49px 0;
   background-color: $blue-dark;
   @include bp(xs){
     padding: 30px 0;
@@ -51,6 +51,7 @@
 .workers-footer__menu{
   display: flex;
   justify-content: center;
+  font-family: $title;
   flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
@@ -70,7 +71,7 @@
       padding: 10px 15px;
       &:hover{
         text-decoration: none;
-        color: $red;
+        color: $red-accent;
       }
     }
   }
