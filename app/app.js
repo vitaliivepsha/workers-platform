@@ -447,6 +447,12 @@ $(function () {
                 end_of_work: {
                     required: true,
                     time: true
+                },
+                first_name: {
+                    required: true,
+                },
+                last_name: {
+                    required: true,
                 }
             },
             messages: {
@@ -557,6 +563,12 @@ $(function () {
                     required: 'Заполните эту информацию',
                 },
                 end_of_work: {
+                    required: 'Заполните эту информацию',
+                },
+                first_name: {
+                    required: 'Заполните эту информацию',
+                },
+                last_name: {
                     required: 'Заполните эту информацию',
                 }
             }

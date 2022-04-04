@@ -1332,7 +1332,7 @@
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-font-family: $title;
+    font-family: $title;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
@@ -1384,6 +1384,217 @@ font-family: $title;
     margin-top: 25px;
     &:hover{
       color: $red-dark;
+    }
+  }
+}
+
+.workers-employer__popup{
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(10, 28, 39, 0.15);
+  border-radius: 5px;
+  width: 1110px;
+  max-width: calc(100vw - 20px);
+  padding: 65px 95px 135px;
+  margin: 0 auto;
+  font-family: $title;
+  color: $blue-dark;
+  @include bp(sm){
+    padding: 50px 50px 100px;
+  }
+  @include bp(xs){
+    padding: 50px 20px 40px;
+  }
+  .mfp-close{
+    top: 25px;
+    right: 25px;
+    @include bp(xs){
+      top: 5px;
+      right: 5px;
+    }
+    svg{
+      pointer-events: none;
+    }
+  }
+}
+
+.workers-employer__popup-title{
+  display: block;
+  text-align: center;
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  @include bp(xs){
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+.workers-employer__popup-inner{
+  margin: 0 auto;
+  width: 520px;
+  max-width: 100%;
+}
+
+.workers-employer__popup-alert{
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(10, 28, 39, 0.3);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  margin-bottom: 25px;
+  padding: 4px 10px;
+  svg{
+    margin-right: 15px;
+    min-width: 17px;
+    @include bp(xs){
+      margin-right: 8px;
+    }
+  }
+  div{
+    span{
+      color: $red;
+    }
+  }
+}
+
+.workers-employer__popup-form{
+  &__row{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    @include bp(xs){
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    >label{
+      margin-bottom: 0;
+      width: calc(100% - 290px);
+      padding-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+      margin-top: 12px;
+      @include bp(xs){
+        margin-top: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        padding-right: 0;
+      }
+      span{
+        color: $red;
+        margin-left: 10px;
+      }
+    }
+    >.input-wrapper{
+      width: 290px;
+      @include bp(xs){
+        width: 100%;
+      }
+      &.error{
+        .input{
+          border-color: $red;
+          +label.error{
+            color: $red;
+          }
+        }
+      }
+      &.two-inputs{
+        display: flex;
+        justify-content: space-between;
+        >div{
+          width: 128px;
+          display: flex;
+          align-items: center;
+          @include bp(xs){
+            width: 50%;
+          }
+          >span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            width: 28px;
+            @include bp(xs){
+              width: 20px;
+            }
+          }
+          .input-wrapper{
+            width: 100px;
+          }
+        }
+        .wp-select .SumoSelect > .CaptionCont > span.placeholder{
+          color: rgba(10, 28, 39, 0.3);
+          font-style: normal;
+        }
+      }
+      .input{
+        border: 1px solid rgba(10, 28, 39, 0.3);
+      }
+    }
+    .wp-select{
+      .SumoSelect{
+        &:hover, &:focus, &.open{
+          >.CaptionCont{
+            box-shadow: none;
+          }
+        }
+        &.open{
+          >.CaptionCont{
+            >label{
+              >i{
+                background-color: $blue-dark;
+              }
+            }
+          }
+        }
+        &.active{
+          >.CaptionCont{
+            >span{
+              color: $blue-dark;
+            }
+          }
+        }
+        >.CaptionCont{
+          border-color: rgba(10, 28, 39, 0.3);
+          >span{
+            padding-right: 8px;
+          }
+          >label{
+            margin-bottom: 0;
+            >i{
+              background-color: $blue-dark;
+            }
+          }
+        }
+        >.optWrapper{
+          box-shadow: 0 10px 10px rgba(10, 28, 39, 0.15);
+          > .options{
+            max-height: 172px;
+          }
+        }
+      }
+    }
+  }
+  .btn{
+    width: 227px;
+    margin-top: 35px;
+    border-color: $red;
+    background-color: $red;
+    color: #fff;
+    @include bp(xs){
+      width: 100%;
+    }
+    &:hover{
+      background-color: #fff;
+      color: $red;
     }
   }
 }

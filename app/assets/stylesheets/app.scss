@@ -94,6 +94,13 @@ body {
       }
     }
   }
+  &.workers-menu-opened{
+    height: 100vh;
+    overflow: hidden;
+    .workers-menu__mobile{
+      display: flex;
+    }
+  }
 }
 
 ol,
