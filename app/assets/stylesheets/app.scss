@@ -5,7 +5,7 @@
 
 html {
   //width: 100vw;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -430,6 +430,9 @@ main {
 
 // Workers Platform Header
 @import "workers-platform/header";
+
+// Workers Platform breadcrumbs
+@import "workers-platform/breadcrumbs";
 
 // Workers Platform Footer
 @import "workers-platform/footer";

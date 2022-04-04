@@ -66,6 +66,15 @@
   }
   & .container {
     height: 50px;
+    &.bg-right {
+      &::before {
+        content: "";
+        display: block !important;
+        width: 20px;
+        height: 20px;
+        background: red;
+      }
+    }
   }
   & ul {
     display: flex;
@@ -79,6 +88,7 @@
         & a {
           position: relative;
           z-index: 1;
+          pointer-events: none;
           &::before {
             content: "";
             position: absolute;
@@ -86,8 +96,9 @@
             top: 0;
             z-index: -1;
             width: 100%;
-            height: 100%;
             background: $red;
+            height: calc(100% + 1px);
+            background: $red-accent;
             transform: skewX(-27deg);
           }
           &:hover{
@@ -102,6 +113,7 @@
         align-items: center;
         height: 100%;
         padding: 0 15px;
+        font-family: $title;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -177,6 +189,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        font-family: $title;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -266,6 +279,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: $title;
     width: 75px;
     height: 40px;
     border: 1px solid #fff;
@@ -368,6 +382,41 @@
         transform: rotate(-45deg);
         transition-delay: 0, 0.3s;
       }
+    }
+  }
+}
+
+.workers-header.vacancy {
+  height: 120px;
+  @include bp(md) {
+    height: 70px;
+  }
+  @include bp(xs) {
+    height: 46px;
+  }
+  & .workers-header__top {
+    & li.current a::before {
+      background: $red;
+    }
+  }
+  & .workers-header__right {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      // z-index: -2;
+      width: calc(100% + 100vw);
+      display: block;
+      height: 100%;
+      background: linear-gradient(360deg, #60010d -542.57%, #d2374a 106.69%);
+      transform: skewX(-27deg);
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    & .workers-header__login {
+     position: relative;
     }
   }
 }
