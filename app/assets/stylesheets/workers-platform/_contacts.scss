@@ -243,6 +243,9 @@
       }
     }
   }
+}
+
+.wp-select{
   .SumoSelect{
     width: 100%;
     display: block;
@@ -300,6 +303,9 @@
       }
     }
     >.optWrapper{
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgb(152, 18, 18);
       &.isFloating{
         position: absolute;
         bottom: auto;
@@ -307,7 +313,29 @@
         max-height: unset;
       }
       >.options{
-        max-height: 146px;
+        padding: 12px 0;
+        max-height: 292px;
+        li{
+          &.opt{
+            padding: 0;
+            border-bottom: none;
+            &.disabled{
+              display: none;
+            }
+            &:hover{
+              background-color: #f4f4f4;
+            }
+          }
+          label{
+            margin-bottom: 0;
+            padding: 6px 20px;
+            font-size: 12px;
+            line-height: 110%;
+            font-weight: 400;
+            white-space: pre-wrap;
+            color: $text;
+          }
+        }
       }
     }
   }

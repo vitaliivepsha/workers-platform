@@ -16,6 +16,33 @@
       }
     }
   }
+  &.vacancies{
+    height: 120px;
+    background-color: $red;
+    .workers-header__left{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        transform: skewX(-27deg);
+      }
+      &:after{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: calc(100% - 30px);
+        height: 100%;
+        width: 30vw;
+        background-color: #fff;
+        transform: skewX(-27deg);
+      }
+    }
+  }
   @include bp(xs) {
     height: 46px;
   }
@@ -60,8 +87,11 @@
             z-index: -1;
             width: 100%;
             height: 100%;
-            background: $red-accent;
+            background: $red;
             transform: skewX(-27deg);
+          }
+          &:hover{
+            color: #fff;
           }
         }
       }
@@ -101,6 +131,8 @@
   margin-right: 30px;
   width: 162px;
   height: 46px;
+  position: relative;
+  z-index: 1;
   @include bp(xs) {
     width: 96px;
     height: 27px;
@@ -223,6 +255,8 @@
 
 .workers-header__login {
   margin-right: 15px;
+  position: relative;
+  z-index: 1;
   @media (max-width: 991px) {
     margin-right: 14px;
     margin-left: auto;

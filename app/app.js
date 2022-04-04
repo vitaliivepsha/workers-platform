@@ -7,6 +7,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/employer.html');
     require('./assets/templates/layouts/partners.html');
     require('./assets/templates/layouts/contacts.html');
+    require('./assets/templates/layouts/vacancies.html');
 }
 
 // Depends
@@ -655,6 +656,22 @@ $(function () {
         captionFormat: false,
         forceCustomRendering: true,
         // triggerChangeCombined: false
+    });
+
+    $('.vacancy-choose__block-sort select').SumoSelect({
+        okCancelInMulti: true,
+        // search: true,
+        // placeholder: 'Поиск',
+        // csvDispCount: 3,
+        captionFormat: false,
+        forceCustomRendering: true,
+        // triggerChangeCombined: false
+    });
+
+    $('.wp-select select').SumoSelect({
+        okCancelInMulti: true,
+        captionFormat: false,
+        forceCustomRendering: true,
     });
 
     $('.multiselect').SumoSelect({
