@@ -3,9 +3,13 @@
 @import "fonts";
 @import "mixin";
 
+:root {
+  --space: 1rem;
+}
+
 html {
   //width: 100vw;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 body {
@@ -449,3 +453,4 @@ main {
 @import "workers-platform/partners";
 @import "workers-platform/contacts";
 @import "workers-platform/vacancies";
+@import "workers-platform/vacancy-with-filters";
