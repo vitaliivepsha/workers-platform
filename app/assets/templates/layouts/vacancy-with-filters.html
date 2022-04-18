@@ -75,803 +75,928 @@
     </div>
     <div class="vacancy-filters__main">
       <div class="container">
-          <div class="vacancy-filters__top">
-              <div class="vacancy-filters__top-left">
-                  <div class="vacancy-filters__btn">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10.5 18H7.5C7.10218 18 6.72064 17.842 6.43934 17.5607C6.15804 17.2794 6 16.8978 6 16.5V10.8075L0.4425 5.25C0.160809 4.96999 0.00167459 4.58968 0 4.1925V1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H16.5C16.8978 0 17.2794 0.158035 17.5607 0.43934C17.842 0.720644 18 1.10218 18 1.5V4.1925C17.9983 4.58968 17.8392 4.96999 17.5575 5.25L12 10.8075V16.5C12 16.8978 11.842 17.2794 11.5607 17.5607C11.2794 17.842 10.8978 18 10.5 18ZM1.5 1.5V4.1925L7.5 10.1925V16.5H10.5V10.1925L16.5 4.1925V1.5H1.5Z" fill="#D2374A"/>
+        <div class="vacancy-filters__top">
+          <div class="vacancy-filters__top-left">
+            <div class="vacancy-filters__btn">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.5 18H7.5C7.10218 18 6.72064 17.842 6.43934 17.5607C6.15804 17.2794 6 16.8978 6 16.5V10.8075L0.4425 5.25C0.160809 4.96999 0.00167459 4.58968 0 4.1925V1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H16.5C16.8978 0 17.2794 0.158035 17.5607 0.43934C17.842 0.720644 18 1.10218 18 1.5V4.1925C17.9983 4.58968 17.8392 4.96999 17.5575 5.25L12 10.8075V16.5C12 16.8978 11.842 17.2794 11.5607 17.5607C11.2794 17.842 10.8978 18 10.5 18ZM1.5 1.5V4.1925L7.5 10.1925V16.5H10.5V10.1925L16.5 4.1925V1.5H1.5Z"
+                  fill="#D2374A" />
+              </svg>
+              Показать фильтры
+            </div>
+            <div class="vacancy-filters__checked-list">
+              <span class="vacancy-filters__checked-item">
+                Берлин
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z"
+                    fill="#7A0D1B" />
+                </svg>
+              </span>
+              <span class="vacancy-filters__checked-item">
+                Сборщики яблок
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z"
+                    fill="#7A0D1B" />
+                </svg>
+              </span>
+              <span class="vacancy-filters__checked-item">
+                Сбросить всё
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z"
+                    fill="#7A0D1B" />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="vacancy-filters__sort-wrap">
+            <span>Сортировка</span>
+            <div class="wp-select">
+              <select>
+                <option selected>От новых к старым</option>
+                <option>От старых к новым</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="vacancy-filters__wrap">
+          <div class="vacancy-filters__wrap-left">
+            <aside class="vacancy-filters__sidebar">
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
+                  </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
                       </svg>
-                      Показать фильтры
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
                   </div>
-                  <div class="vacancy-filters__checked-list">
-                      <span class="vacancy-filters__checked-item">
-                        Берлин
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z" fill="#7A0D1B"/>
-                        </svg>
-                      </span>
-                      <span class="vacancy-filters__checked-item">
-                        Сборщики яблок
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z" fill="#7A0D1B"/>
-                        </svg>
-                      </span>
-                      <span class="vacancy-filters__checked-item">
-                        Сбросить всё
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.795 3.5L6 5.295L4.205 3.5L3.5 4.205L5.295 6L3.5 7.795L4.205 8.5L6 6.705L7.795 8.5L8.5 7.795L6.705 6L8.5 4.205L7.795 3.5Z" fill="#7A0D1B"/>
-                        </svg>
-                      </span>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
                   </div>
-              </div>
-              <div class="vacancy-filters__sort-wrap">
-                  <span>Сортировка</span>
-                  <div class="wp-select">
-                      <select>
-                          <option selected>От новых к старым</option>
-                          <option>От старых к новым</option>
-                      </select>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
                   </div>
-              </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
+                  </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
+                  </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
+                  </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+              <a href="javascript:void(0)" class="vacancy-filters__item">
+                <div class="vacancy-filters__item-head">
+                  <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
+                  <div class="vacancy-filters__item-rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
+                  </div>
+                </div>
+                <div class="vacancy-filters__item-info">
+                  <span class="vacancy-filters__item-id">940358980</span>
+                  <span class="vacancy-filters__item-date">Сегодня</span>
+                </div>
+                <ul class="vacancy-filters__item-list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <div class="vacancy-filters__item-price">11.55 € / час</div>
+              </a>
+            </aside>
           </div>
-          <div class="vacancy-filters__wrap">
-              <div class="vacancy-filters__wrap-left">
-                  <aside class="vacancy-filters__sidebar">
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                    <a href="javascript:void(0)" class="vacancy-filters__item">
-                        <div class="vacancy-filters__item-head">
-                            <span class="vacancy-filters__item-title">Помощник пекаря и не только в Берлине</span>
-                            <div class="vacancy-filters__item-rate">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                </svg>
-                                8.9
-                            </div>
-                        </div>
-                        <div class="vacancy-filters__item-info">
-                            <span class="vacancy-filters__item-id">940358980</span>
-                            <span class="vacancy-filters__item-date">Сегодня</span>
-                        </div>
-                        <ul class="vacancy-filters__item-list">
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Период работы
-                                </div>
-                                <span>28/03/2022 - 28/03/2022</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Сфера
-                                </div>
-                                <span>Сельское хозяйство</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Локация
-                                </div>
-                                <span>Бавария, Мюнхен</span>
-                            </li>
-                            <li>
-                                <div>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                    </svg>
-                                    Количество рабочих мест
-                                </div>
-                                <span>11</span>
-                            </li>
-                        </ul>
-                        <div class="vacancy-filters__item-price">11.55 € / час</div>
-                    </a>
-                  </aside>
-              </div>
-              <div class="vacancy-filters__wrap-right">
-                  <div class="vacancy-filters__main-info">
-                      <a href="javascript:void(0)" class="vacancy-filters__main-link">
-                          Перейти к вакансии
-                          <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 8L8.74228e-08 7L3 4L6.11959e-07 1L1 -3.49691e-07L5 4L1 8Z" fill="#0A1C27"/>
-                          </svg>
-                      </a>
-                      <div class="vacancy-filters__main-top">
-                          <span class="vacancy-filters__main-title">Помощник пекаря и не только в пекарне в Берлине</span>
-                          <div class="vacancy-filters__main-top__right">
-                              <span class="vacancy-filters__main-top__price">11.55 € / час</span>
-                              <div class="vacancy-filters__main-top__rate">
-                                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                  </svg>
-                                  8.9
-                              </div>
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-top__info">
-                          <span class="vacancy-filters__main-top__id">940358980</span>
-                          <span class="vacancy-filters__main-top__date">Сегодня</span>
-                      </div>
-                      <div class="vacancy-filters__main-tags">
-                          <span class="vacancy-filters__main-tag">Студенты/Практика</span>
-                          <span class="vacancy-filters__main-tag">Беженцы</span>
-                          <span class="vacancy-filters__main-tag">Студенты/Работа во время каникул</span>
-                      </div>
-                      <div class="vacancy-filters__main-specs">
-                          <ul class="vacancy-filters__main-specs__list">
-                              <li>
-                                  <div>
-                                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                          <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                      </svg>
-                                      Период работы
-                                  </div>
-                                  <span>28/03/2022 - 28/03/2022</span>
-                              </li>
-                              <li>
-                                  <div>
-                                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                          <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                      </svg>
-                                      Сфера
-                                  </div>
-                                  <span>Сельское хозяйство</span>
-                              </li>
-                              <li>
-                                  <div>
-                                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                          <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                      </svg>
-                                      Локация
-                                  </div>
-                                  <span>Бавария, Мюнхен</span>
-                              </li>
-                              <li>
-                                  <div>
-                                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z" fill="#D2374A"/>
-                                          <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A"/>
-                                      </svg>
-                                      Количество рабочих мест
-                                  </div>
-                                  <span>11</span>
-                              </li>
-                          </ul>
-                          <ul class="vacancy-filters__main-specs__list-dots">
-                              <li>Опыт не требуется</li>
-                              <li>Требуется знание  польского</li>
-                              <li>Водительские права</li>
-                          </ul>
-                      </div>
-                      <div class="vacancy-filters__main-terms">
-                          <div>
-                              <span>Обязанности</span>
-                              <ul>
-                                  <li>Клининговые работы в 4-х и 5-ти звездочных отелях</li>
-                                  <li>Выполнение различных клининговых работ в гостиничных номерах и других помещениях отеля</li>
-                              </ul>
-                          </div>
-                          <div>
-                              <span>Требования</span>
-                              <ul>
-                                  <li>Требуются парни и девушки</li>
-                                  <li>Требуются кандидаты со знанием немецкого языка от уровня A1, а также кандидаты со знанием английского от уровня Elementary</li>
-                                  <li>Ответственность, честность</li>
-                                  <li>Старательность, надежность, мотивация, целеустремленность</li>
-                              </ul>
-                          </div>
-                          <div>
-                              <span>Условия работы</span>
-                              <ul>
-                                  <li>График: 6 дней в неделю</li>
-                                  <li>От 30 рабочих часов в неделю</li>
-                                  <li>Возможны дополнительные часы работы</li>
-                              </ul>
-                          </div>
-                          <div>
-                              <span>Условия проживания</span>
-                              <ul>
-                                  <li>Жилье предоставляется работодателем</li>
-                                  <li>Ориентировочная стоимость проживания с человека - 12-15€ в день. Точная стоимость будет сообщена перед выездом.</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-slider lightgallery slick-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": true, "dots": false, "infinite": true}'>
-                          <div class="slide light-item" data-src="../../images/workers-platform/v-gal-01.jpg">
-                              <picture>
-                                  <source srcset="../../images/pixel.webp" data-original="../../images/workers-platform/v-gal-preview-01.webp" class="lazy-web" type="image/webp">
-                                  <source srcset="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy-web" type="image/jpg">
-                                  <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy" alt="">
-                              </picture>
-                          </div>
-                          <div class="slide light-item" data-src="../../images/workers-platform/v-gal-02.jpg">
-                              <picture>
-                                  <source srcset="../../images/pixel.webp" data-original="../../images/workers-platform/v-gal-preview-02.webp" class="lazy-web" type="image/webp">
-                                  <source srcset="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy-web" type="image/jpg">
-                                  <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy" alt="">
-                              </picture>
-                          </div>
-                          <div class="slide light-item" data-src="//www.youtube.com/watch?v=VrUeGEST6f0">
-                              <picture>
-                                  <source srcset="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web" type="image/jpg">
-                                  <img src="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
-                              </picture>
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white"/>
-                                  <path d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z" fill="#D2374A"/>
-                              </svg>
-                          </div>
-                          <div class="slide light-item" data-src="../../images/workers-platform/v-gal-01.jpg">
-                              <picture>
-                                  <source srcset="../../images/pixel.webp" data-original="../../images/workers-platform/v-gal-preview-01.webp" class="lazy-web" type="image/webp">
-                                  <source srcset="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy-web" type="image/jpg">
-                                  <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy" alt="">
-                              </picture>
-                          </div>
-                          <div class="slide light-item" data-src="../../images/workers-platform/v-gal-02.jpg">
-                              <picture>
-                                  <source srcset="../../images/pixel.webp" data-original="../../images/workers-platform/v-gal-preview-02.webp" class="lazy-web" type="image/webp">
-                                  <source srcset="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy-web" type="image/jpg">
-                                  <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy" alt="">
-                              </picture>
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-about">
-                          <span class="vacancy-filters__main-about__title">О компании</span>
-                          <div class="vacancy-filters__main-about__descr">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.</p>
-                              <p>Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.</p>
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-reviews">
-                          <div class="vacancy-filters__main-reviews__item">
-                              <div class="vacancy-filters__main-reviews__item-pic popup-btn" data-mfp-src="//www.youtube.com/watch?v=VrUeGEST6f0" data-type="iframe">
-                                  <picture>
-                                      <source srcset="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web" type="image/jpg">
-                                      <img src="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
-                                  </picture>
-                                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white"/>
-                                      <path d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z" fill="#D2374A"/>
-                                  </svg>
-                              </div>
-                              <a href="javascript:void(0)" class="vacancy-filters__main-reviews__item-descr">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus.
-                                  <span>&gt;&gt;&gt;</span>
-                              </a>
-                          </div>
-                          <div class="vacancy-filters__main-reviews__item">
-                              <div class="vacancy-filters__main-reviews__item-pic popup-btn" data-mfp-src="//www.youtube.com/watch?v=VrUeGEST6f0" data-type="iframe">
-                                  <picture>
-                                      <source srcset="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web" type="image/jpg">
-                                      <img src="../../images/pixel.jpg" data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
-                                  </picture>
-                                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white"/>
-                                      <path d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z" fill="#D2374A"/>
-                                  </svg>
-                              </div>
-                              <a href="javascript:void(0)" class="vacancy-filters__main-reviews__item-descr">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus.
-                                  <span>&gt;&gt;&gt;</span>
-                              </a>
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-rate__wrapper">
-                          <div class="vacancy-filters__main-rate">
-                              <div class="vacancy-filters__main-rate__head">
-                                  <span>Оценки вакансии клиентами</span>
-                                  <div>( <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z" fill="#d2374a"/>
-                                  </svg> 8.9)</div>
-                              </div>
-                              <ul class="vacancy-filters__main-rate__list">
-                                  <li>
-                                      <span>Общее впечатление</span>
-                                      <div class="rating-stars">
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star"></span>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <span>Условия работы</span>
-                                      <div class="rating-stars">
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star"></span>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <span>Тим лидер на работе</span>
-                                      <div class="rating-stars">
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star"></span>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <span>Проживание</span>
-                                      <div class="rating-stars">
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star"></span>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <span>Коммуникация</span>
-                                      <div class="rating-stars">
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star active"></span>
-                                          <span class="rating-star icon-star"></span>
-                                          <span class="rating-star icon-star"></span>
-                                          <span class="rating-star icon-star"></span>
-                                      </div>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="vacancy-filters__main-rate__text">
-                              *Рейтинг формируется из отзывов тех соискателей, которые работали на этой вакансии
-                          </div>
-                      </div>
-                      <div class="vacancy-filters__main-map">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.1997008709673!2d36.21595131552565!3d50.007612079416724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1a5ced6aaab%3A0x330133a698faf8b2!2sSELFINVEST!5e0!3m2!1sru!2spl!4v1649173812638!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                      <span class="btn vacancy-filters__main-btn">Забронировать вакансию</span>
+          <div class="vacancy-filters__wrap-right">
+            <div class="vacancy-filters__main-info">
+              <a href="javascript:void(0)" class="vacancy-filters__main-link">
+                Перейти к вакансии
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1 8L8.74228e-08 7L3 4L6.11959e-07 1L1 -3.49691e-07L5 4L1 8Z" fill="#0A1C27" />
+                </svg>
+              </a>
+              <div class="vacancy-filters__main-top">
+                <span class="vacancy-filters__main-title">Помощник пекаря и не только в пекарне в Берлине</span>
+                <div class="vacancy-filters__main-top__right">
+                  <span class="vacancy-filters__main-top__price">11.55 € / час</span>
+                  <div class="vacancy-filters__main-top__rate">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                        fill="#d2374a" />
+                    </svg>
+                    8.9
                   </div>
+                </div>
               </div>
+              <div class="vacancy-filters__main-top__info">
+                <span class="vacancy-filters__main-top__id">940358980</span>
+                <span class="vacancy-filters__main-top__date">Сегодня</span>
+              </div>
+              <div class="vacancy-filters__main-tags">
+                <span class="vacancy-filters__main-tag">Студенты/Практика</span>
+                <span class="vacancy-filters__main-tag">Беженцы</span>
+                <span class="vacancy-filters__main-tag">Студенты/Работа во время каникул</span>
+              </div>
+              <div class="vacancy-filters__main-specs">
+                <ul class="vacancy-filters__main-specs__list">
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Период работы
+                    </div>
+                    <span>28/03/2022 - 28/03/2022</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Сфера
+                    </div>
+                    <span>Сельское хозяйство</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Локация
+                    </div>
+                    <span>Бавария, Мюнхен</span>
+                  </li>
+                  <li>
+                    <div>
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2.85547V9.99833H7.14286V2.85547H0ZM5.17555 8.03061H1.96731V4.82169H5.17555V8.03061Z"
+                          fill="#D2374A" />
+                        <path d="M9.99972 0H7.14258V2.85714H9.99972V0Z" fill="#D2374A" />
+                      </svg>
+                      Количество рабочих мест
+                    </div>
+                    <span>11</span>
+                  </li>
+                </ul>
+                <ul class="vacancy-filters__main-specs__list-dots">
+                  <li>Опыт не требуется</li>
+                  <li>Требуется знание польского</li>
+                  <li>Водительские права</li>
+                </ul>
+              </div>
+              <div class="vacancy-filters__main-terms">
+                <div>
+                  <span>Обязанности</span>
+                  <ul>
+                    <li>Клининговые работы в 4-х и 5-ти звездочных отелях</li>
+                    <li>Выполнение различных клининговых работ в гостиничных номерах и других помещениях отеля</li>
+                  </ul>
+                </div>
+                <div>
+                  <span>Требования</span>
+                  <ul>
+                    <li>Требуются парни и девушки</li>
+                    <li>Требуются кандидаты со знанием немецкого языка от уровня A1, а также кандидаты со знанием
+                      английского от уровня Elementary</li>
+                    <li>Ответственность, честность</li>
+                    <li>Старательность, надежность, мотивация, целеустремленность</li>
+                  </ul>
+                </div>
+                <div>
+                  <span>Условия работы</span>
+                  <ul>
+                    <li>График: 6 дней в неделю</li>
+                    <li>От 30 рабочих часов в неделю</li>
+                    <li>Возможны дополнительные часы работы</li>
+                  </ul>
+                </div>
+                <div>
+                  <span>Условия проживания</span>
+                  <ul>
+                    <li>Жилье предоставляется работодателем</li>
+                    <li>Ориентировочная стоимость проживания с человека - 12-15€ в день. Точная стоимость будет сообщена
+                      перед выездом.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vacancy-filters__main-slider lightgallery slick-slider"
+                data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": true, "dots": false, "infinite": true}'>
+                <div class="slide light-item" data-src="../../images/workers-platform/v-gal-01.jpg">
+                  <picture>
+                    <source srcset="../../images/pixel.webp"
+                      data-original="../../images/workers-platform/v-gal-preview-01.webp" class="lazy-web"
+                      type="image/webp">
+                    <source srcset="../../images/pixel.jpg"
+                      data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy-web"
+                      type="image/jpg">
+                    <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg"
+                      class="lazy" alt="">
+                  </picture>
+                </div>
+                <div class="slide light-item" data-src="../../images/workers-platform/v-gal-02.jpg">
+                  <picture>
+                    <source srcset="../../images/pixel.webp"
+                      data-original="../../images/workers-platform/v-gal-preview-02.webp" class="lazy-web"
+                      type="image/webp">
+                    <source srcset="../../images/pixel.jpg"
+                      data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy-web"
+                      type="image/jpg">
+                    <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg"
+                      class="lazy" alt="">
+                  </picture>
+                </div>
+                <div class="slide light-item" data-src="//www.youtube.com/watch?v=VrUeGEST6f0">
+                  <picture>
+                    <source srcset="../../images/pixel.jpg"
+                      data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web"
+                      type="image/jpg">
+                    <img src="../../images/pixel.jpg"
+                      data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
+                  </picture>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white" />
+                    <path
+                      d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z"
+                      fill="#D2374A" />
+                  </svg>
+                </div>
+                <div class="slide light-item" data-src="../../images/workers-platform/v-gal-01.jpg">
+                  <picture>
+                    <source srcset="../../images/pixel.webp"
+                      data-original="../../images/workers-platform/v-gal-preview-01.webp" class="lazy-web"
+                      type="image/webp">
+                    <source srcset="../../images/pixel.jpg"
+                      data-original="../../images/workers-platform/v-gal-preview-01.jpg" class="lazy-web"
+                      type="image/jpg">
+                    <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-01.jpg"
+                      class="lazy" alt="">
+                  </picture>
+                </div>
+                <div class="slide light-item" data-src="../../images/workers-platform/v-gal-02.jpg">
+                  <picture>
+                    <source srcset="../../images/pixel.webp"
+                      data-original="../../images/workers-platform/v-gal-preview-02.webp" class="lazy-web"
+                      type="image/webp">
+                    <source srcset="../../images/pixel.jpg"
+                      data-original="../../images/workers-platform/v-gal-preview-02.jpg" class="lazy-web"
+                      type="image/jpg">
+                    <img src="../../images/pixel.jpg" data-original="../../images/workers-platform/v-gal-preview-02.jpg"
+                      class="lazy" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="vacancy-filters__main-about">
+                <span class="vacancy-filters__main-about__title">О компании</span>
+                <div class="vacancy-filters__main-about__descr">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id
+                    viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus
+                    senectus cursus vitae, at a vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida
+                    convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor
+                    fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.</p>
+                  <p>Gravida convallis vestibulum eget id viverra auctor adipiscing volutpat. Aliquam vitae porttitor
+                    auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a vitae.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Gravida convallis vestibulum eget id viverra auctor adipiscing
+                    volutpat. Aliquam vitae porttitor auctor fermentum id faucibus. Faucibus senectus cursus vitae, at a
+                    vitae.</p>
+                </div>
+              </div>
+
+
+
+              <div class="vacancy-filters__main-reviews">
+                <div class="vacancy-filters__main-reviews__item">
+                  <div class="vacancy-filters__main-reviews__item-pic popup-btn"
+                    data-mfp-src="//www.youtube.com/watch?v=VrUeGEST6f0" data-type="iframe">
+                    <picture>
+                      <source srcset="../../images/pixel.jpg"
+                        data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web"
+                        type="image/jpg">
+                      <img src="../../images/pixel.jpg"
+                        data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
+                    </picture>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white" />
+                      <path
+                        d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z"
+                        fill="#D2374A" />
+                    </svg>
+                  </div>
+                  <a href="javascript:void(0)" class="vacancy-filters__main-reviews__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id
+                    viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus.
+                    <span>&gt;&gt;&gt;</span>
+                  </a>
+                </div>
+                <div class="vacancy-filters__main-reviews__item">
+                  <div class="vacancy-filters__main-reviews__item-pic popup-btn"
+                    data-mfp-src="//www.youtube.com/watch?v=VrUeGEST6f0" data-type="iframe">
+                    <picture>
+                      <source srcset="../../images/pixel.jpg"
+                        data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy-web"
+                        type="image/jpg">
+                      <img src="../../images/pixel.jpg"
+                        data-original="https://img.youtube.com/vi/VrUeGEST6f0/sddefault.jpg" class="lazy" alt="">
+                    </picture>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="5.68945" y="5.6875" width="18.6207" height="18.6207" rx="5" fill="white" />
+                      <path
+                        d="M25.9659 3.62109H4.55213C4.03715 3.62109 3.62109 4.03715 3.62109 4.55213V25.9659C3.62109 26.4809 4.03715 26.897 4.55213 26.897H25.9659C26.4809 26.897 26.897 26.4809 26.897 25.9659V4.55213C26.897 4.03715 26.4809 3.62109 25.9659 3.62109ZM19.0326 15.5151L13.2311 20.0771C13.0158 20.2459 12.6987 20.0946 12.6987 19.8211V10.6999C12.6987 10.4264 13.0158 10.2722 13.2311 10.4438L19.0326 15.003C19.0714 15.0335 19.1027 15.0724 19.1242 15.1167C19.1457 15.1611 19.1569 15.2097 19.1569 15.259C19.1569 15.3083 19.1457 15.357 19.1242 15.4013C19.1027 15.4457 19.0714 15.4846 19.0326 15.5151Z"
+                        fill="#D2374A" />
+                    </svg>
+                  </div>
+                  <a href="javascript:void(0)" class="vacancy-filters__main-reviews__item-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida convallis vestibulum eget id
+                    viverra auctor adipiscing volutpat. Aliquam vitae porttitor auctor fermentum id faucibus.
+                    <span>&gt;&gt;&gt;</span>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <div class="vacancy-filters__main-rate__wrapper">
+                <div class="vacancy-filters__main-rate">
+                  <div class="vacancy-filters__main-rate__head">
+                    <span>Оценки вакансии клиентами</span>
+                    <div>( <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9545 4.13512C10.8493 3.79121 10.5774 3.56412 10.2254 3.52704L7.67341 3.28401C7.50027 3.26786 7.36114 3.1616 7.29139 2.99193L6.27759 0.531718C6.13808 0.203556 5.84015 0 5.50056 0C5.1539 0 4.85559 0.204952 4.72258 0.533911L3.70955 2.99233C3.63999 3.1618 3.50067 3.26806 3.32715 3.28421L0.76809 3.52744C0.424869 3.56432 0.153694 3.79001 0.041134 4.13532C-0.0626349 4.47464 0.0331077 4.8347 0.292434 5.07614L2.22047 6.83877C2.35138 6.95918 2.40431 7.12945 2.36609 7.30549L1.79737 9.91603C1.72016 10.2677 1.8461 10.6178 2.12645 10.8295C2.39934 11.0359 2.76932 11.0528 3.05808 10.8736L5.26532 9.50433C5.41399 9.40883 5.58389 9.40724 5.73791 9.50613L7.94248 10.8734C8.07568 10.9561 8.22588 11 8.37705 11C8.55535 11 8.726 10.9406 8.86875 10.8297C9.1491 10.6178 9.27523 10.2677 9.19822 9.91683L8.63484 7.30549C8.59643 7.12945 8.64956 6.95938 8.78008 6.83916L10.7074 5.07136C10.9709 4.83351 11.0651 4.47365 10.9545 4.13512Z"
+                          fill="#d2374a" />
+                      </svg> 8.9)</div>
+                  </div>
+                  <ul class="vacancy-filters__main-rate__list">
+                    <li>
+                      <span>Общее впечатление</span>
+                      <div class="rating-stars">
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Условия работы</span>
+                      <div class="rating-stars">
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Тим лидер на работе</span>
+                      <div class="rating-stars">
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Проживание</span>
+                      <div class="rating-stars">
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Коммуникация</span>
+                      <div class="rating-stars">
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star active"></span>
+                        <span class="rating-star icon-star"></span>
+                        <span class="rating-star icon-star"></span>
+                        <span class="rating-star icon-star"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="vacancy-filters__main-rate__text">
+                  *Рейтинг формируется из отзывов тех соискателей, которые работали на этой вакансии
+                </div>
+              </div>
+              <div class="vacancy-filters__main-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.1997008709673!2d36.21595131552565!3d50.007612079416724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1a5ced6aaab%3A0x330133a698faf8b2!2sSELFINVEST!5e0!3m2!1sru!2spl!4v1649173812638!5m2!1sru!2spl"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <span class="btn vacancy-filters__main-btn">Забронировать вакансию</span>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </main>
