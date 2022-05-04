@@ -1576,8 +1576,29 @@
         }
         >.optWrapper{
           box-shadow: 0 10px 10px rgba(10, 28, 39, 0.15);
+          left: auto;
+          right: 0;
+          width: 130px;
+          &.isFloating{
+            width: 130px;
+          }
           > .options{
             max-height: 172px;
+            &::-webkit-scrollbar {
+              overflow-y: scroll;
+              background: transparent;
+              width: 3px;
+              transition: linear .2s;
+              box-shadow: 1px 0 0 #c4c4c4;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background: $red;
+              border-radius: 0;
+              width: 3px;
+              transition: linear .2s;
+              cursor: grab;
+            }
           }
         }
       }

@@ -1,6 +1,7 @@
 .workers-footer{
   padding: 49px 0;
   background-color: $blue-dark;
+  clear: both;
   @include bp(xs){
     padding: 30px 0;
   }

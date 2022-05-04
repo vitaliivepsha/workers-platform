@@ -9,6 +9,9 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/contacts.html');
     require('./assets/templates/layouts/vacancies.html');
     require('./assets/templates/layouts/vacancy-with-filters.html');
+    require('./assets/templates/layouts/vacancy-with-filters-uregistered.html');
+    require('./assets/templates/layouts/vacancy-with-filters-role.html');
+    require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
     require('./assets/templates/layouts/vacancy.html');
 }
 
@@ -26,7 +29,7 @@ var LightGallery = require('_modules/lightgallery');
 //var Jslider = require('_modules/jslider');
 //var Fancybox = require('_modules/fancybox');
 require('../node_modules/sumoselect/jquery.sumoselect.min');
-//require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
+require('../node_modules/ion-rangeslider/js/ion.rangeSlider');
 //import PerfectScrollbar from 'perfect-scrollbar';
 require('../node_modules/mark.js/dist/jquery.mark.min');
 require('../node_modules/jquery-validation/dist/jquery.validate.min');
@@ -1327,7 +1330,189 @@ $(function () {
         });
     }, 1000);
 
+    // vacancy slider
+    if ($('.vacancy-filters__main-slider').length) {
+        const settings = {
+            arrows: true,
+            dots: false,
+            infinite: true,
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 574,
+                    settings: "unslick"
+                }
+            ]
+        };
 
+        const sl = $('.vacancy-filters__main-slider').slick(settings);
+
+        setTimeout(function() {
+            $('body').trigger('resize');
+            if ($(window).width() > 574 && !sl.hasClass('slick-initialized')) {
+                $('.vacancy-filters__main-slider').slick(settings);
+            }
+        }, 50);
+
+        $(window).on('resize orientationChange', function () {
+            if ($(window).width() > 574 && !sl.hasClass('slick-initialized')) {
+                $('.vacancy-filters__main-slider').slick(settings);
+            }
+        });
+    }
+    if ($(window).width() < 575) {
+        setTimeout(function() {
+            $('.lightgallery').lightGallery({
+                download: false
+            }).trigger('resize');
+        }, 400);
+    }
+    $(window).on('resize orientationChange', function () {
+        $('.lightgallery').lightGallery({
+            download: false
+        });
+    });
+
+    // vacancy filters
+
+    $('.vacancy-filters__show').click(function () {
+        var btn_txt = $(this).find('span');
+        btn_txt.html() == 'Показать фильтры' ? btn_txt.html('Скрыть фильтры') : btn_txt.html('Показать фильтры');
+        $('.vacancy-filters__wrap').toggleClass('filters-shown');
+        $('body').toggleClass('vacancy-filers__show');
+        setTimeout(function() {
+            $('body').trigger('resize');
+            $('.slick-slider').slick('setPosition');
+        }, 350);
+    });
+
+    $('.vacancy-filters__close').click(function () {
+        $('.vacancy-filters__show > span').html('Показать фильтры');
+        $('.vacancy-filters__wrap').removeClass('filters-shown');
+        $('body').removeClass('vacancy-filers__show');
+        setTimeout(function() {
+            $('body').trigger('resize');
+            $('.slick-slider').slick('setPosition');
+        }, 350);
+    });
+
+    $('.vacancy-filters__menu-filter__head').click(function () {
+        $(this).toggleClass('active').next('.vacancy-filters__menu-filter__body').slideToggle();
+    });
+
+    $('.vacancy-filters__menu-filter__body li').click(function () {
+        $(this).toggleClass('checked');
+    });
+
+    if ($('#vacancy-range1').length) {
+        var $range = $('#vacancy-range1'),
+            $from = $range.closest('.vacancy-range__wrapper').find('.js-from'),
+            $to = $range.closest('.vacancy-range__wrapper').find('.js-to'),
+            range,
+            min = 100,
+            max = 3000,
+            from,
+            to;
+
+        var updateValues = function () {
+            $from.prop("value", from);
+            $to.prop("value", to);
+        };
+
+        $range.ionRangeSlider({
+            type: 'double',
+            min: min,
+            max: max,
+            from: 100,
+            to: 2000,
+            hide_min_max: true,
+            hide_from_to: true,
+            prettify: function (num) {
+                num = Math.round(num);
+                return num;
+            }
+        });
+
+        range = $range.data("ionRangeSlider");
+
+        var updateRange = function () {
+            range.update({
+                from: from,
+                to: to
+            });
+        };
+
+        $range.data('ionRangeSlider').update({
+            onFinish: function () {
+                $from.val(range.result.from);
+                $to.val(range.result.to);
+            }
+        });
+    }
+
+    if ($('#vacancy-range2').length) {
+        var $range2 = $('#vacancy-range2'),
+            $from2 = $range2.closest('.vacancy-range__wrapper').find('.js-from'),
+            $to2 = $range2.closest('.vacancy-range__wrapper').find('.js-to'),
+            range2,
+            min2 = 100,
+            max2 = 3000,
+            from2,
+            to2;
+
+        var updateValues2 = function () {
+            $from2.prop("value", from2);
+            $to2.prop("value", to2);
+        };
+
+        $range2.ionRangeSlider({
+            type: 'double',
+            min: min2,
+            max: max2,
+            from: 100,
+            to: 2000,
+            hide_min_max: true,
+            hide_from_to: true,
+            prettify: function (num) {
+                num = Math.round(num);
+                return num;
+            }
+        });
+
+        range2 = $range2.data("ionRangeSlider");
+
+        var updateRange2 = function () {
+            range2.update({
+                from: from2,
+                to: to2
+            });
+        };
+
+        $range2.data('ionRangeSlider').update({
+            onFinish: function () {
+                $from2.val(range2.result.from);
+                $to2.val(range2.result.to);
+            }
+        });
+    }
+
+    $('.popup-btn').each(function () {
+        $(this).magnificPopup({
+            callbacks: {
+                beforeOpen: function () {
+                    $('html').addClass('mfp-open');
+                },
+                afterClose: function () {
+                    $('html').removeClass('mfp-open');
+                }
+            },
+        });
+    });
+
+    $('.popup .btn-ok').click(function (){
+        $(this).closest('.popup').find('.mfp-close').trigger('click');
+    });
 });
 
 $('.what-job, .where-job').SumoSelect({
