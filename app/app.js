@@ -12,8 +12,12 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/vacancy-with-filters-uregistered.html');
     require('./assets/templates/layouts/vacancy-with-filters-role.html');
     require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
+    require('./assets/templates/layouts/vacancy-with-filters-no-actual-vacancies.html');
     require('./assets/templates/layouts/vacancy.html');
     require('./assets/templates/layouts/for-ukranians.html');
+    require('./assets/templates/layouts/program-refugees.html');
+    require('./assets/templates/layouts/program-practice.html');
+    require('./assets/templates/layouts/program-vacation.html');
 }
 
 // Depends
