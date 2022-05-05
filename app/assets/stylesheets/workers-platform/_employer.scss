@@ -20,11 +20,19 @@
     display: flex;
     flex-direction: column-reverse;
   }
-
   @include bp(xs) {
     margin-bottom: 0 !important;
   }
-
+  &.ua-bg{
+    background: linear-gradient(0deg, #0A1C27, #0A1C27), linear-gradient(360deg, #60010D -18.03%, #D2374A 106.69%);
+    > .container{
+      .workers-employer-main__info{
+        @include bp(xs) {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
   &:before {
     position: absolute;
     content: "";
@@ -74,6 +82,20 @@
           position: static;
           margin: 0;
         }
+      }
+    }
+  }
+  .breadcrumbs{
+    position: absolute;
+    left: 0;
+    top: 86px;
+    width: 100%;
+    @include bp(sm) {
+      top: 10px;
+    }
+    ul{
+      li{
+        display: flex;
       }
     }
   }

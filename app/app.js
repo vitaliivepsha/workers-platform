@@ -13,6 +13,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('./assets/templates/layouts/vacancy-with-filters-role.html');
     require('./assets/templates/layouts/vacancy-with-filters-no-reviews.html');
     require('./assets/templates/layouts/vacancy.html');
+    require('./assets/templates/layouts/for-ukranians.html');
 }
 
 // Depends
@@ -331,12 +332,12 @@ $(function () {
 
     // validation
 
-    $('.validate-form').each(function () {
+    $('.validate-form').each(function() {
         $(this).validate({
-            highlight: function (element) {
+            highlight: function(element) {
                 $(element).parent().addClass('error');
             },
-            unhighlight: function (element) {
+            unhighlight: function(element) {
                 $(element).parent().removeClass('error');
             },
             rules: {
@@ -458,7 +459,20 @@ $(function () {
                 },
                 last_name: {
                     required: true,
-                }
+                },
+                name_en: {
+                    required: true,
+                    onlylatinletters: true
+                },
+                host_country: {
+                    required: true,
+                },
+                host_city: {
+                    required: true,
+                },
+                date_germany: {
+                    required: true,
+                },
             },
             messages: {
                 name_ua: {
@@ -575,6 +589,36 @@ $(function () {
                 },
                 last_name: {
                     required: 'Заполните эту информацию',
+                },
+                name_en: {
+                    required: 'Заполните эту информацию',
+                },
+                host_country: {
+                    required: 'Заполните эту информацию',
+                },
+                host_city: {
+                    required: 'Заполните эту информацию',
+                },
+                date_germany: {
+                    required: 'Заполните эту информацию',
+                }
+            },
+            submitHandler: function(){
+                if($("#refugees-form").length){
+                    $.ajax({
+                        data: $("#refugees-form").serialize(),
+                        success: function(data)
+                        {
+                            $.magnificPopup.open({
+                                items: {
+                                    src: '#refugees-form-success'
+                                }
+                            });
+                            $('html, body').animate({
+                                scrollTop: $("#refugees-form-success").offset().top - 200
+                            }, 200);
+                        }
+                    });
                 }
             }
         });
